@@ -3,5 +3,16 @@
     "pg": "^8.11.5",
     "reflect-metadata": "^0.2.2",
     "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "name": "fag",
+  "version": "1.0.0",
+  "scripts": {
+    "start:client": "cd webapp && ng serve",
+    "start:server": "cd fag-api && nest start --debug --watch",
+	"start:all": "concurrently \"npm run start:client\" \"npm run start:server\""
   }
+
 }
