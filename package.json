@@ -2,7 +2,7 @@
   "name": "meu-projeto-teste",
   "version": "1.0.0",
   "scripts": {
-    "start:client": "cd webapp && ng serve",
+    "start:client": "cd app && ng serve",
     "start:server": "cd fag-api && nest start",
     "start:all": "concurrently \"npm run start:client\" \"npm run start:server\""
   },
